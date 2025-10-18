@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Profile Card</title>
+</head>
+
+<body>
+    <article class="profilecard" data-test-id="test-profile-card">
+
+
+        <section data-test-id="section-image" class="image">
+            <figure data-test-id="profile-figure">
+                <img src="/image/3U3A0370.JPG" alt="my image"
+                    data-test-id="test-user-avater">
+            </figure>
+            <article class="name" data-test-id="test-article">
+                <h1 data-test-id="test-user-name">Okeke Nancy</h1>
+                <p>frontend developer</p>
+
+
+                <header data-test-id="header">
+                    <p data-test-id="test-user-time" id="stamp"></p>
+                </header>
+            </article>
+
+
+        </section>
+
+        <!-- <hr> -->
+        
+            <article class="para" data-test-id="test-user-bio">
+
+                <p data-test-id="test-user-bio">
+                    Hi, i am Nancy.A passionate frontend developer,Focused on building smart,responsive user-friendly web and <br>
+                    continiously learning to improve my skills so as to create impactful digital experience.
+                </p>
+            </article>
+
+        
+
+        <!-- <hr> -->
+
+        <nav data-test-id="test-user-social-links" class="links">
+            <h4 data-test-id="connect">connect with me</h4>
+            <a class="focus" href="https://github.com/NEON-NANA" data-test-id="test-user-social-github" target="_blank" rel="noopener noreferrer" class>github</a>
+        <a class="focus" href="https://x.com/neon___nana?s=21" data-test-id="test-user-social-twiter" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </nav>
+
+        <main class="move" data-test-id="hobbies-cards">
+            <section data-test-id="hobby-card" class="move1">
+                <h2 data-test-id="hobby"> &#10084;Hobbies</h2>
+                <ul data-test-id="test-user-hobbies">
+                    <li>Reading</li>
+                    <li>Painting</li>
+                    <li>coding</li>
+                    <li>hiking</li>
+                </ul>
+            </section>
+
+            <section data-test-id="dislikes-caed" class="move2">
+                <h2 data-test-id="dislikes">&#128078;Dislikes</h2>
+                <ul data-test-id="test-user-dislikes">
+                    <li>Loud noises</li>
+                    <li>Dirty Environment</li>
+                    <li>Chewing Loud</li>
+                    <li>Cluttered workspace</li>
+                </ul>
+            </section>
+        </main>
+
+
+    </article>
+
+    <script>
+
+        const milliseconds = Date.now();
+        document.getElementById("stamp").textContent = milliseconds;
+    </script>
+</body>
+
+</html>
